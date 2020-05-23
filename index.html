@@ -9,6 +9,8 @@
 		<link href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-font-face.min.css" media="all" rel="stylesheet">
 		<link href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all" rel="stylesheet">
 
+		<!--rader chart-->
+		<script src="https://cdn.zingchart.com/zingchart.min.js"></script>
 		<!--my css-->
 		<link rel="stylesheet" href="css/styles.css">
 
@@ -25,31 +27,66 @@
 
 		<!--bio-->
 		<div class="bio-box">
-		<div class="bio-box-content">
 		<h1>Bio</h1>
+		<div class="bio-box-content">
+		<div class="bio-box-content-text">
 		<p>I am investigating how neighborhood environment affect chronic health of middle and old age adults in Sweden and Japan.</p>
+		</div>
+		<div class="bio-box-content-img">
 		<img src="./img/profile.jpg" alt="Profile photo" class="bio-img">	
+		</div>
 		</div>
 		</div>
 
 		<!--skills-->
 		<div class="skills-box">
-		<div class="skills-box-content">
 		<h1>Skills</h1>
+		<div class="skills-box-content">
+		<div class="skills-box-content-research">
 		<h2>Research skills</h2>
-		<p>Literature review</p>
-		<p>Scientific writing</p>
-		<p>Statistical analyis</p>
-		<p>Grant writing</p>
-		<p>Data management</p>
+  
+		<div id="myChart" class="chart--container">
+			<a class="zc-ref" href="https://www.zingchart.com/">Powered by ZingChart</a>
+		</div>
+		</div>
+		<div class="skills-box-content-other">
 		<h2>Other skills</h2>
 		<i class="fab fa-r-project skills-icon"> R</i>
+		<div class="skills-bar-container">
+			<div class="skills-bar-innercontent r"> 
+			</div>
+		</div>
 		<i class="fas fa-file-signature skills-icon"> Latex</i>
+		<div class="skills-bar-container">
+			<div class="skills-bar-innercontent latex"> 
+			</div>
+		</div>
 		<i class="fab fa-python skills-icon"> Python</i>
+		<div class="skills-bar-container">
+			<div class="skills-bar-innercontent python">
+			</div>
+		</div>
 		<i class="fas fa-map-marked-alt skills-icon"> GIS</i>
+		<div class="skills-bar-container">
+			<div class="skills-bar-innercontent gis">
+			</div>
+		</div>
 		<i class="fab fa-html5 skills-icon"> HTML</i>
+		<div class="skills-bar-container">
+			<div class="skills-bar-innercontent html">
+			</div>
+		</div>
 		<i class="fab fa-css3-alt skills-icon"> CSS</i>
+		<div class="skills-bar-container">
+			<div class="skills-bar-innercontent css">
+			</div>
+		</div>
 		<i class="fab fa-js skills-icon"> JavaScript</i>
+		<div class="skills-bar-container">
+			<div class="skills-bar-innercontent js">
+			</div>
+		</div>
+		</div>
 		</div>
 		</div>
 
@@ -57,15 +94,19 @@
 		<div class="experiences-box">
 		<div class="experiences-box-content">
 		<h1>Experiences</h1>
+		<img src="./img/lund_RGB.png" alt="Lund university" class="experiences-img lund">	
 		<h2>PhD student in Epidemiology</h2>
 		<p>Center for Primary Health Care Research, Lund University</p>
 		<p>September 2019 - Present</p>
+		<img src="./img/logo_shimaneUniv.png" alt="Shimane university" class="experiences-img shimane">	
 		<h2>Researcher</h2>
 		<p>Center for Community-base Healthcare Research and Education, Shimane University</p>
 		<p>October 2017 - August 2019</p>
+		<img src="./img/cdphe.png" alt="CDPHE" class="experiences-img cdphe">	
 		<h2>Intern</h2>
 		<p>Colorado Department of Public Health and Environment</p>
 		<p>October 2016 - April 2017</p>
+		<img src="./img/csph.png" alt="CSPH" class="experiences-img csph">	
 		<h2>Data Analyst</h2>
 		<p>Center for Global Health, University of Colorado Denver</p>
 		<p>October 2016 - December 2016</p>
@@ -125,6 +166,9 @@
 		<div class="footer-box">
 		<p>© Copyright 2020 Kenta Okuyama</p>
 		</div>
+		
+	
+		<script src="./js/index.js" charset="utf-8"></script>
 	</body>
 </html>
 
