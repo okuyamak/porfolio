@@ -1,0 +1,162 @@
+/***********************TAG SELECTOR*******************/
+
+html{
+}
+body {
+	height: 100%;
+	margin: 0px;
+	text-align: center;
+}
+
+h1 {
+	font-family: COPPERPLATE, "Baloo 2", Caveat, Papyrus, fantasy, serif;
+	color: darkcyan;
+}
+
+h2 {
+	font-family: COPPERPLATE, "Baloo 2", Caveat, Papyrus, fantasy, serif;
+	font-weight: normal;
+}
+
+p {
+	font-family: serif, Arial, "Baloo 2", Caveat, Papyrus, fantasy, serif;
+}
+
+
+a {
+	margin: 20px;
+	text-decoration: none;
+	color: darkcyan;
+}
+
+a:hover {
+	color: blue;
+}
+
+img {
+}
+
+/***********************Class SELECTOR*******************/
+
+/******home******/
+.home-box {
+	padding: 25px;
+	background-color: powderblue;
+	height: 600px;
+}
+.home-box-content {
+	display: flex;
+	flex-direction: column;
+	height: 400px;
+	justify-content: center;
+	align-items: center;
+}
+
+/******bio******/
+.bio-box {
+	background-color: white;
+	height: 100%;
+	padding: 100px;
+}
+
+
+.bio-box-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.bio-img {
+	border-radius: 50%;
+	height: auto;
+	width: 200px;
+	max-width: 400px;
+}
+
+
+/******skills******/
+.skills-box {
+	background-color: #EAF6F6;
+	height: 100%;
+	padding: 100px;
+}
+
+.skills-box-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.skills-icon {
+	padding: 20px;
+}
+
+/******experiences******/
+.experiences-box {
+	background-color: white;
+	height: 100%;
+	padding: 100px;
+}
+
+.experiences-box-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+/******educations******/
+.educations-box {
+	background-color: #EAF6F6;
+	height: 100%;
+	padding: 100px;
+}
+
+.educations-box-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+/******projects******/
+.projects-box {
+	background-color: white;
+	height: 100%;
+	padding: 100px;
+}
+
+.projects-box-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+/******posts******/
+.posts-box {
+	background-color: #EAF6F6;
+	height: 100%;
+	padding: 100px;
+}
+
+.posts-box-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+/******contact******/
+.contact-box {
+	background-color: white;
+	height: 100%;
+}
+.contact-icon{
+	padding: 20px;
+}
+/******footer******/
+.footer-box {
+	background-color: #EAF6F6;
+	height: 100%;
+	padding: 100px;
+}
+
+
