@@ -38,6 +38,17 @@ img {
 
 /***********************Class SELECTOR*******************/
 
+/******navbar******/
+.navbar {
+}
+
+.navbar-brand {
+	font-weight: bold;
+}
+
+.nav-item {
+}
+
 /******home******/
 .home-box {
 	padding: 25px;
