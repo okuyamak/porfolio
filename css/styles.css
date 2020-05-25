@@ -24,7 +24,6 @@ p {
 
 
 a {
-	margin: 20px;
 	text-decoration: none;
 	color: darkcyan;
 }
@@ -33,28 +32,28 @@ a:hover {
 	color: blue;
 }
 
+ul {
+	list-style-type: none;
+	font-family: Arial;
+}
+
 img {
 }
 
-* {
-	box-sizing: border-box; /**to include padding and border in the width and height**/
+/************ RWD ************/
+* { /*to include padding and border in the width and height*/
+	box-sizing: border-box; 
 }
 
-/* to clear the flow */
-.row::after {
+.row::after { /*to clear the flow*/
   content: "";
   clear: both;
   display: table;
 }
 
-[class*="col-"] {
-  float: left;
-  padding: 15px;
-}
-
 /***********************Class SELECTOR*******************/
 
-/******navbar******/
+/******navbar bootstrap
 .navbar {
 }
 
@@ -64,6 +63,37 @@ img {
 
 .nav-item {
 }
+******/
+
+/******navbar******/
+ul.navbar {
+	background-color: #333;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+ul.navbar li a {
+  display: block;
+  color: white;
+  padding: 20px 20px;
+  text-decoration: none;
+}
+
+ul.navbar li a:hover {
+  background-color: #111;
+}
+.col-2.nav-icon {
+	font-weight: bold;
+	padding: 0;
+}
+.col-2.nav-item {
+	padding: 0;
+}
+
+.col-2.nav-item li {
+}
+
 
 /******home******/
 .home-box {
@@ -92,7 +122,6 @@ img {
 	align-items: center;
 }
 */
-
 .bio-box-content-text {
 	text-align: left;
 }
@@ -258,13 +287,13 @@ img {
 	padding: 100px;
 }
 
-/* For mobile phones: */
 [class*="col-"] {
+  float: left;
+  padding: 15px;
   width: 100%;
 }
 
 @media only screen and (min-width: 768px) {
-  /* For desktop: */
   .col-1 {width: 8.33%;}
   .col-2 {width: 16.66%;}
   .col-3 {width: 25%;}
@@ -278,6 +307,5 @@ img {
   .col-11 {width: 91.66%;}
   .col-12 {width: 100%;}
 }
-
 
 
