@@ -2,6 +2,8 @@
 <html>
 	<head>
 		<meta charset="utf-8">
+		<!--make responsive to all devices-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title Kenta Okuyama></title>
 		<!--fontawesome-->
 		<script src="https://kit.fontawesome.com/be7d8fb875.js" crossorigin="anonymous"></script>
@@ -59,20 +61,13 @@
 		<section id="bio">
 			<div class="bio-box">
 				<h1>Bio</h1>
-				<div class="bio-box-content">
-					<div class="bio-box-content-text">
-						<div class="container-fluid">
-							<div class="row"> 
-								<div class="col-lg-6">
-									<p>I am investigating how neighborhood environment affect chronic health of middle and old age adults in Sweden and Japan.</p>
-								</div>
-								<!--<div class="bio-box-content-img">-->
-									
-								<div class="col-lg-6">
-									<img src="./img/profile.jpg" alt="Profile photo" class="bio-img">	
-								</div>
-							</div>
-						</div>
+				<div class="row bio-box-content">
+					<div class="col-5 bio-box-content-text">
+						<p>I am investigating how neighborhood environment affect chronic health of middle and old age adults in Sweden and Japan.</p>
+						
+					</div>
+					<div class="col-7 bio-box-content-img">
+						<img src="./img/profile.jpg" alt="Profile photo" class="bio-img">	
 					</div>
 				</div>
 			</div>
@@ -81,76 +76,97 @@
 
 		<!--skills-->
 		<div class="skills-box">
-		<h1>Skills</h1>
-		<div class="skills-box-content">
-		<div class="skills-box-content-research">
-		<h2>Research skills</h2>
-		<div id="myChart" class="chart--container">
-			<a class="zc-ref" href="https://www.zingchart.com/">Powered by ZingChart</a>
-		</div>
-		</div>
-		<div class="skills-box-content-other">
-		<h2>Other skills</h2>
-		<i class="fab fa-r-project skills-icon"> R</i>
-		<div class="skills-bar-container">
-			<div class="skills-bar-innercontent r"> 
+			<h1>Skills</h1>
+			<div class="row skills-box-content">
+				<div class="col-6 skills-box-content-research">
+					<h2>Research skills</h2>
+					<div id="myChart" class="chart--container">
+						<a class="zc-ref" href="https://www.zingchart.com/">Powered by ZingChart</a>
+					</div>
+				</div>
+				<div class="col-6 skills-box-content-other">
+					<h2>Other skills</h2>
+					<i class="fab fa-r-project skills-icon"> R</i>
+					<div class="skills-bar-container">
+						<div class="skills-bar-innercontent r"> 
+						</div>
+					</div>
+					<i class="fas fa-file-signature skills-icon"> Latex</i>
+					<div class="skills-bar-container">
+						<div class="skills-bar-innercontent latex"> 
+						</div>
+					</div>
+					<i class="fab fa-python skills-icon"> Python</i>
+					<div class="skills-bar-container">
+						<div class="skills-bar-innercontent python">
+						</div>
+					</div>
+					<i class="fas fa-map-marked-alt skills-icon"> GIS</i>
+					<div class="skills-bar-container">
+						<div class="skills-bar-innercontent gis">
+						</div>
+					</div>
+					<i class="fab fa-html5 skills-icon"> HTML</i>
+					<div class="skills-bar-container">
+						<div class="skills-bar-innercontent html">
+						</div>
+					</div>
+					<i class="fab fa-css3-alt skills-icon"> CSS</i>
+					<div class="skills-bar-container">
+						<div class="skills-bar-innercontent css">
+						</div>
+					</div>
+					<i class="fab fa-js skills-icon"> JavaScript</i>
+					<div class="skills-bar-container">
+						<div class="skills-bar-innercontent js">
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
-		<i class="fas fa-file-signature skills-icon"> Latex</i>
-		<div class="skills-bar-container">
-			<div class="skills-bar-innercontent latex"> 
-			</div>
-		</div>
-		<i class="fab fa-python skills-icon"> Python</i>
-		<div class="skills-bar-container">
-			<div class="skills-bar-innercontent python">
-			</div>
-		</div>
-		<i class="fas fa-map-marked-alt skills-icon"> GIS</i>
-		<div class="skills-bar-container">
-			<div class="skills-bar-innercontent gis">
-			</div>
-		</div>
-		<i class="fab fa-html5 skills-icon"> HTML</i>
-		<div class="skills-bar-container">
-			<div class="skills-bar-innercontent html">
-			</div>
-		</div>
-		<i class="fab fa-css3-alt skills-icon"> CSS</i>
-		<div class="skills-bar-container">
-			<div class="skills-bar-innercontent css">
-			</div>
-		</div>
-		<i class="fab fa-js skills-icon"> JavaScript</i>
-		<div class="skills-bar-container">
-			<div class="skills-bar-innercontent js">
-			</div>
-		</div>
-		</div>
-		</div>
-		</div>
+		
 
 		<!--experiences-->
-		<div class="experiences-box">
-		<div class="experiences-box-content">
 		<h1>Experiences</h1>
-		<img src="./img/lund_RGB.png" alt="Lund university" class="experiences-img lund">	
-		<h2>PhD student in Epidemiology</h2>
-		<p>Center for Primary Health Care Research, Lund University</p>
-		<p>September 2019 - Present</p>
-		<img src="./img/logo_shimaneUniv.png" alt="Shimane university" class="experiences-img shimane">	
-		<h2>Researcher</h2>
-		<p>Center for Community-base Healthcare Research and Education, Shimane University</p>
-		<p>October 2017 - August 2019</p>
-		<img src="./img/cdphe.png" alt="CDPHE" class="experiences-img cdphe">	
-		<h2>Intern</h2>
-		<p>Colorado Department of Public Health and Environment</p>
-		<p>October 2016 - April 2017</p>
-		<img src="./img/csph.png" alt="CSPH" class="experiences-img csph">	
-		<h2>Data Analyst</h2>
-		<p>Center for Global Health, University of Colorado Denver</p>
-		<p>October 2016 - December 2016</p>
+		<div class="row">
+			<div class="col-3">
+				<img src="./img/lund_RGB.png" alt="Lund university" class="experiences-img lund">	
+			</div>
+			<div class="col-9">
+				<h2>PhD student in Epidemiology</h2>
+				<p>Center for Primary Health Care Research, Lund University</p>
+				<p>September 2019 - Present</p>
+			</div>
 		</div>
+		<div class="row">
+			<div class="col-3">
+				<img src="./img/logo_shimaneUniv.png" alt="Shimane university" class="experiences-img shimane">	
+			</div>
+			<div class="col-9">
+				<h2>Researcher</h2>
+				<p>Center for Community-base Healthcare Research and Education, Shimane University</p>
+				<p>October 2017 - August 2019</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-3">
+				<img src="./img/cdphe.png" alt="CDPHE" class="experiences-img cdphe">	
+			</div>
+			<div class="col-9">
+				<h2>Intern</h2>
+				<p>Colorado Department of Public Health and Environment</p>
+				<p>October 2016 - April 2017</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-3">
+				<img src="./img/csph.png" alt="CSPH" class="experiences-img csph">	
+			</div>
+			<div class="col-9">
+				<h2>Data Analyst</h2>
+				<p>Center for Global Health, University of Colorado Denver</p>
+				<p>October 2016 - December 2016</p>
+			</div>
 		</div>
 
 		<!--educations-->

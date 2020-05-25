@@ -36,6 +36,22 @@ a:hover {
 img {
 }
 
+* {
+	box-sizing: border-box; /**to include padding and border in the width and height**/
+}
+
+/* to clear the flow */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
 /***********************Class SELECTOR*******************/
 
 /******navbar******/
@@ -69,28 +85,25 @@ img {
 	height: 100%;
 	padding: 100px;
 }
-/*
+/* no need besause of RWD
 .bio-box-content {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
+*/
 
 .bio-box-content-text {
 	text-align: left;
-	width: 40%;
-	padding: 20px;
 }
 .bio-box-img {
-	width: 40%;
-	padding: 20px;
 }
-*/
 .bio-img {
 	border-radius: 20%;
+	width: 100%;
 	height: auto;
-	width: 40%;
 }
+
 
 
 /******skills******/
@@ -99,17 +112,20 @@ img {
 	height: 100%;
 	padding: 100px;
 }
+/* no need because of RWD
 .skills-box-content {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
+*/
 /***skills-radar***/
+/* no need because of RWD
 .skills-box-content-research {
 	width: 40%;
 	padding: 20px;
 }
-
+*/
 .zc-body {
   background-color: #fff;
 }
@@ -124,8 +140,6 @@ img {
 }
 /***skills-bar***/
 .skills-box-content-other {
-	width: 40%;
-	padding: 20px;
 	text-align: left;
 }
 .skills-icon {
@@ -133,7 +147,7 @@ img {
 }
 .skills-bar-container {
 	background-color: black;
-	width: 100%;
+	width: 90%;
 }
 .skills-bar-innercontent {
 	background-color: darkcyan;
@@ -164,6 +178,7 @@ img {
 }
 
 /******experiences******/
+/*
 .experiences-box {
 	background-color: white;
 	height: 100%;
@@ -174,11 +189,10 @@ img {
 	flex-direction: column;
 	justify-content: center;
 }
-
+*/
 .experiences-img {
+	width: 100%;
 	height: auto;
-	width: 200px;
-	max-width: 400px;
 	margin: auto;
 }
 .lund {
@@ -232,6 +246,7 @@ img {
 .contact-box {
 	background-color: white;
 	height: 100%;
+	padding: 100px;
 }
 .contact-icon{
 	padding: 20px;
@@ -242,5 +257,27 @@ img {
 	height: 100%;
 	padding: 100px;
 }
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+
 
 
