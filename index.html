@@ -53,30 +53,15 @@
 
 
 		<!--navbar-->
-		<ul class="navbar">
-			<div class="row">
-				<div class="col-2 nav-icon">
-					<li><a href="#home">
-							<img src="favicon_io/favicon-16x16.png" width="" height="" alt=""> Kenta Okuyama</a></li>
-				</div>
-				<div class="col-2 nav-item">
-					<li><a href="#home">Home</a></li>
-				</div>
-				<div class="col-2 nav-item">
-					<li><a href="#bio">Bio</a></li>
-				</div>
-				<div class="col-2 nav-item">
-					<li><a href="#projects">Projects</a></li>
-				</div>
-				<div class="col-2 nav-item">
-					<li><a href="#posts">Posts</a></li>
-				</div>
-				<div class="col-2 nav-item">
-					<li><a href="#contact">Contact</a></li>
-				</div>
-			</div>
-		</ul>
-
+		<div class="nav" id="navbar">
+			<a href="#home"><img src="favicon_io/favicon-16x16.png" width="" height="" alt=""></a>
+			<a href="#home" class="active">Home</a>
+			<a href="#bio">Bio</a>
+			<a href="#projects">Projects</a>
+			<a href="#posts">Posts</a>
+			<a href="#contact">Contact</a>
+			<a href="javascript:void(0);" class="nav-icon" onclick="navResponse()"><i class="fa fa-bars"></i></a>
+		</div>
 
 		<!--home-->
 		<section id="home">
@@ -91,16 +76,15 @@
 		<!--bio-->
 		<section id="bio">
 			<div class="bio-box">
-				<h1>Bio</h1>
-				<div class="row bio-box-content">
-					<div class="col-6 bio-box-content-text">
-						<p>I am investigating how neighborhood environment affect chronic health of middle and old age adults in Sweden and Japan.</p>
-						
-					</div>
-					<div class="col-6 bio-box-content-img">
-						<img src="./img/profile.jpg" alt="Profile photo" class="bio-img">	
-					</div>
+			<h1>Bio</h1>
+			<div class="row">
+				<div class="col-6 bio-box-text">
+					<p>I am investigating how neighborhood environment affect chronic health of middle and old age adults in Sweden and Japan.</p>
 				</div>
+				<div class="col-6 bio-box-img">
+					<img src="./img/profile.jpg" alt="Profile photo" class="bio-img">	
+				</div>
+			</div>
 			</div>
 		</section>
 
@@ -108,14 +92,14 @@
 		<!--skills-->
 		<div class="skills-box">
 			<h1>Skills</h1>
-			<div class="row skills-box-content">
-				<div class="col-6 skills-box-content-research">
+			<div class="row">
+				<div class="col-6 skills-box-research">
 					<h2>Research skills</h2>
 					<div id="myChart" class="chart--container">
 						<a class="zc-ref" href="https://www.zingchart.com/">Powered by ZingChart</a>
 					</div>
 				</div>
-				<div class="col-6 skills-box-content-other">
+				<div class="col-6 skills-box-other">
 					<h2>Other skills</h2>
 					<i class="fab fa-r-project skills-icon"> R</i>
 					<div class="skills-bar-container">

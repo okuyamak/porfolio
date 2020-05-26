@@ -1,3 +1,14 @@
+/***responsible navigatin bar***/
+/* Toggle between adding and removing the "responsive" class to nav when the user clicks on the icon */
+function navResponse() {
+  var x = document.getElementById("navbar");
+  if (x.className === "nav") {
+    x.className += " responsive";
+  } else {
+    x.className = "nav";
+  }
+}
+
 /***smooth scroll***/
 // Select all links with hashes
 $('a[href*="#"]')
