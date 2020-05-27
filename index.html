@@ -31,27 +31,6 @@
 	</head>
 
 	<body>
-		<!--navbar bootstrap
-		<nav class="navbar sticky-top navbar-expand-md navbar-dark bg-dark">
-			<a class="navbar-brand" href="#home">
-				<img src="favicon_io/favicon-32x32.png" width="30" height="30" class="d-inline-block align-top" alt=""> Kenta Okuyama
-			</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-				<div class="navbar-nav">
-					<a class="nav-item nav-link active" href="#home">Home</a>
-					<a class="nav-item nav-link" href="#bio">Bio</a>
-					<a class="nav-item nav-link" href="#projects">Projects</a>
-					<a class="nav-item nav-link" href="#posts">Posts</a>
-					<a class="nav-item nav-link" href="#contact">Contact</a>
-				</div>
-			</div>
-		</nav>
-		-->
-
-
 		<!--navbar-->
 		<div class="nav" id="navbar">
 			<a href="#home"><img src="favicon_io/favicon-16x16.png" width="" height="" alt=""></a>
@@ -64,42 +43,35 @@
 		</div>
 
 		<!--home-->
-		<section id="home">
-			<div class="home-box">
+		<div class="home-box" id="home">
 				<div class="home-box-content">
 					<h1>Hello. My name is Kenta Okuyama.</h1>
 					<h1>PhD student in Epidemiology at Lund University.</h1>
 				</div>
-			</div>
-		</section>
+		</div>
 
 		<!--bio-->
-		<section id="bio">
-			<div class="bio-box">
+		<div class="bio-box" id="bio">
 			<h1>Bio</h1>
-			<div class="row">
-				<div class="col-6 bio-box-text">
-					<p>I am investigating how neighborhood environment affect chronic health of middle and old age adults in Sweden and Japan.</p>
-				</div>
-				<div class="col-6 bio-box-img">
-					<img src="./img/profile.jpg" alt="Profile photo" class="bio-img">	
-				</div>
+			<div class="bio-box-content bio-box-text">
+				<p>I am investigating how neighborhood environment affect chronic health of middle and old age adults in Sweden and Japan.</p>
 			</div>
+			<div class="bio-box-content bio-box-img">
+				<img src="./img/profile.jpg" alt="Profile photo" class="bio-img">	
 			</div>
-		</section>
+		</div>
 
 
 		<!--skills-->
 		<div class="skills-box">
 			<h1>Skills</h1>
-			<div class="row">
-				<div class="col-6 skills-box-research">
+				<div class="skills-box-research">
 					<h2>Research skills</h2>
 					<div id="myChart" class="chart--container">
 						<a class="zc-ref" href="https://www.zingchart.com/">Powered by ZingChart</a>
 					</div>
 				</div>
-				<div class="col-6 skills-box-other">
+				<div class="skills-box-other">
 					<h2>Other skills</h2>
 					<i class="fab fa-r-project skills-icon"> R</i>
 					<div class="skills-bar-container">
@@ -137,47 +109,40 @@
 						</div>
 					</div>
 				</div>
-			</div>
 		</div>
 		
 
 		<!--experiences-->
+		<div class="experiences-box" id="experiences">
 		<h1>Experiences</h1>
-		<div class="row">
-			<div class="col-3">
-				<img src="./img/lund_RGB.png" alt="Lund university" class="experiences-img lund">	
+			<div class="experiences-img">
+				<img src="./img/lund_RGB.png" alt="Lund university" class="img-logo lund">	
 			</div>
-			<div class="col-9">
+			<div class="experiences-text">
 				<h2>PhD student in Epidemiology</h2>
 				<p>Center for Primary Health Care Research, Lund University</p>
 				<p>September 2019 - Present</p>
 			</div>
-		</div>
-		<div class="row">
-			<div class="col-3">
-				<img src="./img/logo_shimaneUniv.png" alt="Shimane university" class="experiences-img shimane">	
+			<div class="experiences-img">
+				<img src="./img/logo_shimaneUniv.png" alt="Shimane university" class="img-logo shimane">
 			</div>
-			<div class="col-9">
+			<div class="experiences-text">
 				<h2>Researcher</h2>
 				<p>Center for Community-base Healthcare Research and Education, Shimane University</p>
 				<p>October 2017 - August 2019</p>
 			</div>
-		</div>
-		<div class="row">
-			<div class="col-3">
-				<img src="./img/cdphe.png" alt="CDPHE" class="experiences-img cdphe">	
+			<div class="experiences-img">
+				<img src="./img/cdphe.png" alt="CDPHE" class="img-logo">
 			</div>
-			<div class="col-9">
+			<div class="experiences-text">
 				<h2>Intern</h2>
 				<p>Colorado Department of Public Health and Environment</p>
 				<p>October 2016 - April 2017</p>
 			</div>
-		</div>
-		<div class="row">
-			<div class="col-3">
-				<img src="./img/csph.png" alt="CSPH" class="experiences-img csph">	
+			<div class="experiences-img">
+				<img src="./img/csph.png" alt="CSPH" class="img-logo">
 			</div>
-			<div class="col-9">
+			<div class="experiences-text">
 				<h2>Data Analyst</h2>
 				<p>Center for Global Health, University of Colorado Denver</p>
 				<p>October 2016 - December 2016</p>
@@ -186,7 +151,6 @@
 
 		<!--educations-->
 		<div class="educations-box">
-		<div class="educations-box-content">
 		<h1>Educations</h1>
 		<h2>Master of Public Health, Epidemiology</h2>
 		<p>August 2014 - May 2016</p>
@@ -198,12 +162,9 @@
 		<p>April 2009 - March 2014</p>
 		<p>Hosei University, Japan</p>
 		</div>
-		</div>
 
 		<!--projects-->
-		<section id="projects">
-		<div class="projects-box">
-		<div class="projects-box-content">
+		<div class="projects-box" id="projects">
 		<h1>Research projects</h1>
 		<h2>Neighborhood and health</h2>
 		<p>My research focus is devided into 2 target populations, 1. Working age adults and 2. Older adults.</p>
@@ -214,20 +175,14 @@
 		<h2>PhD program</h2>
 		<p>My coursework, seminars, conference, during PhD program at Lund University</p>
 		</div>
-		</div>
-		</section>
 
 		<!--posts-->
-		<section id="posts">
-		<div class="posts-box">
-		<div class="posts-box-content">
+		<div class="posts-box" id="posts">
 		<h1>Posts</h1>
 		<h2>Epidemiology</h2>
 		<h2>Japan</h2>
 		<h2>Sweden</h2>
 		</div>
-		</div>
-		</section>
 		
 		<!--contact-->
 		<section id="contact">
